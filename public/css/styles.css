@@ -1,0 +1,80 @@
+.background-contact {
+	background:url('/public/img/background/contact.jpg')no-repeat;background-position:center;	
+}
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+.navbar .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    background-color: rgba(255,255,255,0.45);
+    color: #FFC0CB;
+	  border-radius: 50%;
+}
+
+
+html, body{
+  /*background: #fffffc url('/public/img/noise.png');*/
+  color:#000;
+  line-height:1.6;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding:1em;
+
+}
+
+.special{
+	height: 100%;
+}
+
+.panel-primary{
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.panel-body{
+  margin-right: 10%;
+  margin-left: 10%;
+    
+  
+	
+}
+
+.panel panel-default{
+	
+  max-width:1170px;
+  padding:1em;
+}
+
+ul{
+  list-style: none;
+  padding:0;
+}
+
+.brand{
+  text-align: center;
+}
+
+.brand span{
+  color:#fff;
+}
+
+.wrapper{
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0);
+}
+
+.wrapper > *{
+  padding: 1em;
+}
+
+.contact{
+}
+
+.contact-btn{
+	background-color: rgba(0, 0, 0, 0);
+}
+
+

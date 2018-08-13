@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+	
+
+	<script>
+         function myFunction()
+         {
+             if(window.innerWidth !== undefined && window.innerHeight !== undefined) {
+                 var w = window.innerWidth;
+                 var h = window.innerHeight;
+             } else {
+                 var w = document.documentElement.clientWidth;
+                 var h = document.documentElement.clientHeight;
+            }
+			
+			//set the text of the height and width
+			var height = h + "px";
+			var width = w + "px";
+			
+			//set the css of the height and width
+			document.getElementById("container").style.height = height;
+			document.getElementById("container").style.width = width;
+         }
+      </script>
+	
+        <title>Robin Ritter</title>
+	    <link rel="shortcut icon" type="image/png" href="../public/img/favicon.png"/>
+		<nav class="navbar" role="navigation">
+		  <div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+			  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			  </button>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			  <ul class="nav navbar-nav">
+				<li class="pull-left"><a href="/">
+					<img class="" src="../public/img/header/gallery.png" alt="Generic placeholder image" height="100px" width="100px">
+				</a></li>
+				<li><a href="/shop">
+					<img class="" src="../public/img/header/shop.png" alt="Generic placeholder image" height="100px" width="100px">
+				</a></li>
+				<li><a href="/profile">
+					<img class="" src="../public/img/header/profile.png" alt="Generic placeholder image" height="100px" width="100px">
+				</a></li>
+				<li><a href="/contact">
+					<img class="" src="../public/img/header/contact.png" alt="Generic placeholder image" height="100px" width="100px">
+				</a></li>
+				<li class="social pull-right"><a href="https://www.instagram.com/robin.ritter/" target="_blank">
+					<img class="" src="../public/img/header/instagram.png" alt="Generic placeholder image" height="100px" width="100px">
+				</a></li>
+			  </ul>
+			  
+
+			  {{{messages}}}
+			  
+			  <div class="entry">
+				  {{#if user }}
+					 <a class="button" href="/users/logout">Log Out</a>
+					 </br>
+					 <a class="button" href="/upload">Upload Image</a>
+				  {{/if}}
+				</div> 
+			</div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+		 
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="/public/css/styles.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+    </head>
+    <body>	
+	
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    {{{body}}}
+                </div>
+            </div>
+        </div>
+        <div>
+		
+			
+			</br>
+			
+            <div class="container">
+                <div class="row">
+                        <p class="text-right">
+							<img src="/public/img/footer/logo.png" alt="{{title}}" style=" height: 50px;">
+                            <img src="/public/img/footer/copyright.png" alt="{{title}}" style=" height: 50px;">
+                        </p>
+                </div>
+            </div>
+        </div>
+       
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="/public/js/main.js"></script>
+    </body>
+</html>

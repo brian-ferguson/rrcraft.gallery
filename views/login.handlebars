@@ -1,0 +1,33 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h3 class="panel-title">
+            Log In
+        </h3>
+    </div>
+	
+	
+	
+    <form method="post" action="/users/login">
+        <div class="panel-body form-horizontal">
+
+			<div class="form-group col-md-12">
+                <label class="col-md-2 control-label">Username:</label>
+                <div class="col-md-10">
+                    <input class="form-control" type="text" name="username">
+                </div>
+            </div>
+			<div class="form-group col-md-12">
+                <label class="col-md-2 control-label">Password:</label>
+                <div class="col-md-10">
+                    <input class="form-control" type="password" name="password">
+                </div>
+            </div>
+
+			<div class="form-group col-md-12">
+                <div class="col-md-12 text-right">
+                    <button type="submit" id="login-btn" class="btn btn-success" type="button">Log In</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

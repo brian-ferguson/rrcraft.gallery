@@ -1,0 +1,66 @@
+<body class="background-contact">
+
+<h1 class="brand"><img src="public/img/headings/talk_to_me.png" alt="Generic placeholder image" height="100px"></h1>
+
+	<h1 class="brand" style="color:white;">{{msg}}</h1>
+
+<div class="wrapper animated bounceInLeft">
+    <div class="panel-heading">
+        <h3 class="panel-title">
+            
+        </h3>
+    </div>
+    <form method="POST" action="/send" enctype="multipart/form-data">
+        <div class="panel-body form-horizontal">
+		
+            <div class="form-group col-md-12">
+                <label class="col-sm-2 control-label" style="color:white;">Browse:</label>
+                <div class="col-md-10">
+                    <input class="form-control" type="file" name="avatar" multiple="multiple">
+                </div>
+            </div>
+			
+            <div class="form-group col-md-12">
+                <label class="col-md-2 control-label"><img src="/public/img/contact/name.png" height="15px"> </label>
+                <div class="col-md-10">
+                    <input class="form-control" type="text" name="name">
+                </div>
+            </div>
+			
+			<div class="form-group col-md-12">
+                <label class="col-md-2 control-label"> <img src="/public/img/contact/email.png" height="20px"></label>
+                <div class="col-md-10">
+                    <input class="form-control" type="text" name="email">
+                </div>
+            </div>
+			
+			<div class="form-group col-md-12">
+                <label class="col-md-2 control-label"> <img src="/public/img/contact/subject.png" height="25px"></label>
+                <div class="col-md-10">
+                    <input class="form-control" type="text" name="subject">
+                </div>
+            </div>
+			
+            <div class="form-group col-md-12">
+                <label class="col-md-2 control-label"><img src="/public/img/contact/body.png" height="25px"></label>
+                <div class="col-md-10">
+                    <textarea class="form-control" name="message" rows="2"></textarea>
+                </div>
+            </div>
+			
+
+			
+			
+			
+            <div class="form-group col-md-12">
+                <div class="col-md-12 text-center">
+                      <button class="contact-btn" type="sumbit"> <img src="/public/img/contact/submit_icon.png"></button>
+                </div>
+            </div>
+        </div>
+    </form>
+	
+
+	
+</div>
+</body>

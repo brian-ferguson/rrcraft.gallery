@@ -1,0 +1,16 @@
+<div class="col-md-12 text-center">
+	<img src="../{{image.path}}" class="img-thumbnail">
+	</br>
+	<p><b> {{ image.title }}</b></p>
+	<p>{{ image.description }}</p>
+</div>
+
+<div class="entry">
+  {{#if user }}
+	<button type="button" class="delete-image" href = "/images/{{image.id}}" data-id= {{image.id}} class="btn btn-danger">Delete</button>
+  {{/if}}
+</div>
+
+
+
+

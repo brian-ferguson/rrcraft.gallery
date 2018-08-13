@@ -1,0 +1,65 @@
+<html>
+<head>
+ <title>Upload an Image</title>
+</head>
+<body>
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h3 class="panel-title">
+            Upload an Image
+        </h3>
+    </div>
+	
+	
+	
+
+    <form method="post" action="images" enctype="multipart/form-data">
+        <div class="panel-body form-horizontal">
+		
+            <div class="form-group col-md-12">
+                <label class="col-sm-2 control-label">Browse:</label>
+                <div class="col-md-10">
+                    <input class="form-control" type="file" name="avatar">
+                </div>
+            </div>
+
+			<div class="form-group col-md-12">
+                <label class="col-md-2 control-label" for="title">Title:</label>
+                <div class="col-md-10">
+                    <input class="form-control" type="text" name="title">
+                </div>
+            </div>
+			
+            <div class="form-group col-md-12">
+                <label class="col-md-2 control-label" for="description">Description:</label>
+                <div class="col-md-10">
+                    <textarea class="form-control" name="description" rows="2"></textarea>
+                </div>
+            </div>
+			
+			<div class="form-group col-md-12">
+				<label class="col-md-2 control-label">Add to: </label>
+				<div class="col-md-10">
+					<select class="form-control" name="gallery_id">
+						<option value="">Choose a gallery:</option>
+						<option value="mixed_media">Mixed Media</option>
+						<option value="almost_human">Almost Human</option>
+						<option value="paper">Paper</option>
+						<option value="glass">Glass</option>
+					</select>
+				</div>
+			</div>
+			
+			<div class="form-group col-md-12">
+                <div class="col-md-12 text-right">
+                    <button type="submit" id="login-btn" class="btn btn-success" type="button"><i class="fa fa-cloud-upload "></i> Upload Image</button>
+                </div>
+            </div>
+        </div>
+    </form>
+
+</div>
+	
+
+</body>
+</html>
